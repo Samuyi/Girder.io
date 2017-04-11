@@ -1,3 +1,4 @@
 [options]
-suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line;
-.*/node_modules/jss/.*;
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
+[ignore]
+.*/node_modules/jss/.*

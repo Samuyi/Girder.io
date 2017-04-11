@@ -15,9 +15,11 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
-import Immutable from 'immutable';
 import $ from 'jquery';
 import Tether from 'tether';
+
+const Immutable = require('immutable');
+
 
 window.jQuery = $;
 window.Tether = Tether;
@@ -59,7 +61,6 @@ if (module.hot) {
 
 const jssServerSide = document.querySelector(JSS_SSR_SELECTOR);
 // flow-disable-next-line
-
 jssServerSide.parentNode.removeChild(jssServerSide);
 
 setUpSocket(store);

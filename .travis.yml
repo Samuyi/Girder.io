@@ -1,2 +1,3 @@
 language: node_js
-node_js: node npm run prod:build
+node_js: node
+script:  npm run test && npm run prod:build

@@ -1,6 +1,5 @@
 // @flow
 
-import Immutable from 'immutable';
 import {
   createStore,
   combineReducers,
@@ -9,6 +8,8 @@ import {
 import thunkMiddleware from 'redux-thunk';
 
 import helloReducer from '../shared/reducer/hello';
+
+const Immutable = require('immutable');
 
 const initStore = (plainPartialState: ?Object) => {
   const preLoadedState = plainPartialState ? {} : undefined;
